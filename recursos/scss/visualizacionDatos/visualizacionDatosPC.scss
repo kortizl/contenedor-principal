@@ -1,0 +1,17 @@
+@import '../variables.scss';
+@import '../../../node_modules/red-unica/src/scss/funciones.scss';
+
+@media screen and (min-width: 1025px) and (hover:hover) {
+    .grafica-dona {
+        .highcharts-caption {
+            font-size: 27px;
+            letter-spacing: -2.14px;
+          }
+        
+          &.numerico {
+            .highcharts-caption {
+                font-size: 22px;
+              }
+          }
+    }
+}

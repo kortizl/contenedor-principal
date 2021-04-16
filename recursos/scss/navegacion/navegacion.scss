@@ -1,0 +1,57 @@
+@import '../variables.scss';
+@import'../../../node_modules/red-unica/src/scss/funciones.scss';
+
+.navegacion{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: flex-start;
+    flex-grow: 0;
+    width: calcularTamanio(995);
+    height: calcularTamanio(50);
+    position: fixed;
+    background-color: #ffffff;
+    z-index: 1;
+    
+    .navegacion-texto{
+        width: max-content;
+        margin-top: calcularTamanio(30);
+    }
+ 
+    .flecha {
+        margin-top:  calcularTamanio(39);
+        margin-left:  calcularTamanio(8);
+        margin-right:  calcularTamanio(7);
+        width: calcularTamanio(8);
+        height: calcularTamanio(8);
+        background: transparent;
+        border-top: calcularTamanio(1) ridge black;
+        border-right: calcularTamanio(1) ridge black;
+        box-shadow: 0 0 0 black;
+    
+
+        &.izquierda {
+            
+            transform: translate3d(0,-50%,0) rotate(-135deg);
+        }
+
+        &.derecha {
+            
+            transform: translate3d(0,-50%,0) rotate(45deg);
+        }
+
+    }
+    
+}
+.linea-encabezado-final{
+    padding-bottom: calcularTamanio(5);
+    background: #F7F7F7;
+    width: 100%;
+    margin-top: calcularTamanio(50);
+    position: fixed;
+    z-index: 1;
+}
+.linea-encabezado-espacio{
+    height:  calcularTamanio(45);
+}

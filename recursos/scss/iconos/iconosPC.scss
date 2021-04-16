@@ -1,0 +1,104 @@
+@import '../variables.scss';
+@import '../../../node_modules/red-unica/src/scss/funciones.scss';
+
+/* Estilos para PC  */
+@media screen and (min-width: 1025px) and (hover: hover) {
+  /***************************************************************************
+    Icono con accion - Lista de ordenamiento
+  ****************************************************************************/
+  div.icono-orden {
+    height: 19px;
+    width: 14px;
+
+    ul {
+      width: 215px;
+      height: 246px;
+      top: 19px;
+      box-shadow: 0px 2px 4px $color-primario-1;
+
+      li {
+        height: 49.2px;
+        font-size: 12px;
+        padding-left: 20px;
+        padding-top: 18px;
+
+        div {
+          height: 30.9px;
+          width: 175px;
+          border-bottom: 1px $color-visualizacion-dato-4 solid;
+        }
+      }
+    }
+  }
+  /***************************************************************************
+    Icono con accion - Filtro de elementos
+  ****************************************************************************/
+  div.icono-filtro {
+    height: 19px;
+    width: 15px;
+
+    ul {
+      width: 215px;
+      height: 290px;
+      box-shadow: 0px 2px 4px $color-primario-1;
+      top: 19px;
+
+      li {
+
+        div {
+          font-size: 12px;
+          width: 185px;
+
+          &.seleccion-actual {
+            margin-left: 20px;
+
+            .categoria-seleccionada {
+              padding-top: 15px;
+              padding-bottom: 10px;
+            }
+
+            .filtro-seleccionado {
+              padding-bottom: 10px;
+            }
+          }
+
+          &.categoria {
+            padding-top: 15px;
+            padding-bottom: 6px;
+            margin-left: 20px;
+          }
+
+          &.seleccion-filtros {
+            border-top: 1px solid $color-visualizacion-dato-4;
+            border-bottom: 1px solid $color-visualizacion-dato-4;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin-left: 10px;
+
+            .boton-radio {
+              margin-left: 15px;
+              padding-top: 8px;
+              padding-bottom: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /***************************************************************************
+    Icono - Aviso emergente
+  ****************************************************************************/
+  .avisoEmergente{
+    width: 211px;
+    padding-top: 8.5px;
+    padding-left: 13px;
+    padding-right: 8px;
+    padding-bottom: 6.5px;
+    font-size: 14px;
+    border-width: 2px;
+    line-height: 20px;
+    margin-left: 16px;
+  }
+
+}

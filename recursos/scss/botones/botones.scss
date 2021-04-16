@@ -1,0 +1,160 @@
+@import '../variables.scss';
+@import'../../../node_modules/red-unica/src/scss/funciones.scss';
+
+button {
+  &.primario {
+    width: 100%;
+    height: calcularTamanio(48);
+    color: $color-primario-4;
+    font-family: $fuente-texto;
+    font-size: calcularTamanio(14);
+    font-weight: bold;
+    border: none;
+    outline: none;
+    background-color: $color-primario-6;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+
+    &:disabled {
+        pointer-events: none;
+        cursor: none;
+        background-color: $color-visualizacion-dato-4;
+    }
+  }
+
+  &.secundario {
+    width: 100%;
+    color: $color-primario-6;
+    font-family: $fuente-texto;
+    font-size: calcularTamanio(14);
+    font-weight: bold;
+    border: none;
+    outline: none;
+    background-color: $color-secundario-14;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+
+    &.d1 {
+      height: calcularTamanio(48);
+    }
+
+    &.d2 {
+      height: calcularTamanio(30);
+    }
+
+    &.d3 {
+      height: calcularTamanio(24);
+
+      &.cantidad {
+        font-size: calcularTamanio(16);
+      }
+
+      h4 {
+        display: inline;
+        font-weight: normal;
+      }
+    }
+    /***************************************************************************
+      Botón secundario con icono (paquetes)
+    ****************************************************************************/
+    &.icono {
+      height: calcularTamanio(30);
+      background-color: $color-secundario-20;
+      color: $color-secundario-21;
+
+      .icono-paquete {
+        background-repeat: no-repeat;
+        background-image: url(../../imagenes/paqueteRojo.svg);
+        width: calcularTamanio(17);
+        height: calcularTamanio(13);
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: calcularTamanio(5.78);
+      }
+    }
+
+    &:disabled {
+      color: $color-visualizacion-dato-4;
+      pointer-events: none;
+      cursor: none;
+      background-color: $color-secundario-18;
+    }
+  }
+
+  &.terciario {
+    width: 100%;
+    height: calcularTamanio(48);
+    color: $color-primario-6;
+    font-family: $fuente-texto;
+    font-size: calcularTamanio(14);
+    font-weight: bold;
+    border: calcularTamanio(2) solid $color-primario-6;
+    outline: none;
+    background-color: $color-primario-4;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+
+    &.d3 {
+      height: calcularTamanio(24);
+    }
+
+    &:disabled {
+      color:  $color-visualizacion-dato-4;
+      pointer-events: none;
+      cursor: none;
+      border: calcularTamanio(2) solid $color-visualizacion-dato-4;
+    }
+  }
+}
+/***************************************************************************
+  Botón deslizable sin icono
+****************************************************************************/
+.boton-deslizable {
+  .control {
+    display: none;
+  }
+
+  .etiqueta {
+    cursor: pointer;
+    font-size: calcularTamanio(12);
+    font-family: $fuente-texto;
+    margin-left: calcularTamanio(-15);
+    color: $color-visualizacion-dato-3;
+    position: relative;
+  }
+
+  .barra {
+    float: left;
+    height: calcularTamanio(5);
+    width: calcularTamanio(50);
+    transition: margin 0.3s ease-in 0s;
+    background-color: $color-primario-1;
+    margin-top: calcularTamanio(5.5);
+  }
+
+  .circulo {
+    position: relative;
+    float: left;
+    background-color: $color-visualizacion-dato-4;
+    right: calcularTamanio(51);
+    border: calcularTamanio(2) solid $color-primario-2;
+    border-radius: 50%;
+    transition: all 0.3s ease-in 0s;
+    width: calcularTamanio(20);
+    height: calcularTamanio(20);
+    margin-top: calcularTamanio(-1.75);
+  }
+
+  .control:checked + .etiqueta .circulo {
+    right: calcularTamanio(19);
+    background-color: $color-primario-6;
+    border: calcularTamanio(2) solid $color-primario-2;
+    color: $color-primario-5;
+  }
+}

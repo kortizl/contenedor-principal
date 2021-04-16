@@ -1,0 +1,43 @@
+@import '../variables.scss';
+@import'../../../node_modules/red-unica/src/scss/funciones.scss';
+
+/* Estilos para PC  */
+@media screen and (min-width: 1025px) and (hover: hover) {
+    /***************************************************************************
+        Indicador de Espera
+    ****************************************************************************/
+    div.contenedor-carga{
+    
+        .cargando {
+            width: 150px;
+            height: 150px;
+            margin: 300px auto;
+            border-width: 2.5px;
+        }
+            .cargando:before {
+                top: 5px;
+                left: 5px;
+                right: 5px;
+                bottom: 5px;
+                border-width: 2.5px;
+            }
+            .cargando:after {
+                top: 15px;
+                left: 15px;
+                right: 15px;
+                bottom: 15px;
+                border-width: 2.5px;
+            }
+    }
+}
+
+@media screen and (min-height: 769px) {
+    /***************************************************************************
+      El Indicador de Espera se centra al rebasar los 768px
+    ****************************************************************************/
+    div.contenedor-carga{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

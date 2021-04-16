@@ -1,0 +1,43 @@
+@import '../variables.scss';
+@import'../../../node_modules/red-unica/src/scss/funciones.scss';
+
+button {
+  &.pestania {
+    font-family: $fuente-texto;
+    font-weight: normal;
+    background-color: $color-primario-4;
+    color: $color-primario-1;
+    border: none;
+    font-size: calcularTamanio(14);
+    text-align: center;
+    height: calcularTamanio(24);
+    width: 100%;
+    vertical-align: middle;
+    cursor: pointer;
+    outline: none;
+    border-radius: calcularTamanio(4) calcularTamanio(4) calcularTamanio(0) calcularTamanio(0);
+    float: left;
+
+    &.activa,:hover {
+      font-weight: bold;
+      background-color: $color-primario-6;
+      color: $color-primario-4;
+    }
+  }
+}
+
+div {
+  &.separacion {
+    height: calcularTamanio(19);
+    margin-top: calcularTamanio(5);
+    float: left;
+
+    &.activa {
+      border-right: calcularTamanio(1) #D8D8D8 solid;
+    }
+
+    &.inactiva {
+      border-right: none;
+    }
+  }
+}

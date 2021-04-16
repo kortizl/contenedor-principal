@@ -1,0 +1,157 @@
+@import "../variables.scss";
+
+/* Estilos para PC  */
+@media screen and (min-width: 1025px) and (hover: hover) {
+  /********************************************************
+    Estilos del campo de formulario 'Selector/Dropdown'
+  *********************************************************/
+  div.selector {
+    height: 50px;
+    padding-top: 15px;
+    border-width: 2px;
+    margin: 25px 0 45px 0;
+    background-size: 15px;
+    background-position: right 7px center;
+
+    &::after,
+    &::before {
+      width: 2px;
+      height: 7px;
+    }
+
+    &>.opcion {
+      padding-left: 18px;
+    }
+
+    &>span {
+      top: 50px;
+      margin-top: 10px;
+    }
+
+    &:focus .opcion {
+      top: 35px;
+      border-left-width: 1px;
+      border-right-width: 1px;
+      padding: 18px 16px;
+    }
+
+    &:focus .opcion::before {
+      height: 1px;
+    }
+
+    &:focus label:nth-last-child(3) {
+      border-bottom-width: 1px;
+    }
+
+    &>label:not(.opcion) {
+      top: -15px;
+    }
+
+    &:not(:focus) > input[type="radio"]:checked + .opcion {
+      font-size: 22px;
+    }
+  }
+  /********************************************************
+    Botón Radio
+  *********************************************************/
+  .boton-radio {
+    input[type="radio"]:checked,
+    input[type="radio"]:not(:checked) {
+      &.d1 + label {
+        font-size: 16px;
+      }
+
+      &.d2 + label {
+        font-size: 14px;
+      }
+
+      &.d3 + label {
+        font-size: 12px;
+      }
+
+      &:disabled + label {
+        &:before {
+          border: 1px solid $color-visualizacion-dato-4;
+        }
+      }
+
+      + label {
+        height: 18px;
+        padding-top: 1px;
+        padding-left: 28px;
+        line-height: 18px;
+
+        &:before {
+          width: 18px;
+          height: 18px;
+          border: 1px solid $color-primario-1;
+        }
+
+        &:after {
+          width: 14px;
+          height: 14px;
+          top: 2px;
+          left: 2px;
+        }
+      }
+    }
+  }
+
+/********************************************************
+  Lista Desplegable
+*********************************************************/
+  .lista-desplegable{
+    width: inherit;
+    
+    .menu-desplegable-control {
+      width: 100%;
+    }
+    
+    .menu-desplegable-flechita {
+      width: 14px;
+      margin-right: 8.34px;
+    }
+    
+    .menu-desplegable-opcion-seleccionada {
+      width: 100%;
+      height: 100%;
+      padding-left: 10px;
+    }
+    
+    .menu-desplegable-borde-inferior {
+      height: 7px;
+      width: 100%;
+      border: 2px solid $color-primario-1;
+    }
+    
+    .menu-desplegable-opciones {
+      box-shadow: $color-visualizacion-dato-4 1px 1px 1px 1px;
+      width: 100%;
+      background-color: $color-primario-4;
+    }
+    
+    .menu-desplegable-opcion {
+      padding-top: 18.01px;
+      padding-left: 15.05px;
+      padding-right: 14px;
+    
+      div.menu-desplegable-borde-seleccion {
+          width: 100%;
+          margin-top: 15px;
+          border-bottom-width: 1px;
+      }
+    }
+    
+    .menu-desplegable-texto-numerico-espaciado-derecho {
+      padding-right: 10px;
+    }
+    
+    .menu-desplegable-texto-numerico-espaciado-izquierdo {
+      padding-left: 10px;
+    }
+    
+    .menu-desplegable-texto-ayuda {
+      margin-top: 11px;
+    } 
+  }
+}

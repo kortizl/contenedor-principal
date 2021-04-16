@@ -1,0 +1,22 @@
+@import './variables.scss';
+
+@font-face {
+  font-family: $fuente-texto;
+  src: url("../fuentes/AvenirNextLTPro/AvenirNextLTPro-Demi.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $fuente-texto;
+  src: url("../fuentes/AvenirNextLTPro/AvenirNextLTPro-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $fuente-numerica;
+  src: url("../fuentes/AkkuratMono/Akkurat-Mono.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}

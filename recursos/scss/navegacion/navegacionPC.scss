@@ -1,0 +1,60 @@
+@import '../variables.scss';
+
+/* Estilos para PC  */
+@media screen and (min-width: 1025px) and (hover:hover) {
+
+.navegacion{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: flex-start;
+    flex-grow: 0;
+    width: 995px;
+    height: 50px;
+    position: fixed;
+    background-color: #ffffff;
+    z-index: 1;
+
+    .navegacion-texto{
+        width: max-content;
+        margin-top: 30px;
+    }
+
+    .flecha {
+        margin-top:  39px;
+        margin-left:  8px;
+        margin-right: 7px;
+        width: 8px;
+        height: 8px;
+        background: transparent;
+        border-top: 1px ridge black;
+        border-right: 1px ridge black;
+        box-shadow: 0 0 0 black;
+    
+
+        &.izquierda {
+        
+            transform: translate3d(0,-50%,0) rotate(-135deg);
+        }
+
+        &.derecha {
+            right: 0;
+            transform: translate3d(0,-50%,0) rotate(45deg);
+        }
+
+    }
+     
+    }
+    .linea-encabezado-final{
+        padding-bottom: 5px;
+        background: #F7F7F7;
+        margin-top: 50px;
+       
+        position: fixed;
+        z-index: 1;
+    }
+    .linea-encabezado-espacio{
+        height: 45px;
+    }  
+}

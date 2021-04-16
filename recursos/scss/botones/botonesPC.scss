@@ -1,0 +1,87 @@
+@import '../variables.scss';
+@import'../../../node_modules/red-unica/src/scss/funciones.scss';
+
+/* Estilos para PC  */
+@media screen and (min-width: 1025px) and (hover: hover) {
+  button {
+    &.primario {
+      height: 48px;
+      font-size: 14px;
+    }
+
+    &.secundario {
+      font-size: 14px;
+
+      &.d1 {
+        height: 48px;
+      }
+
+      &.d2 {
+        height: 30px;
+      }
+
+      &.d3 {
+        height: 24px;
+
+        &.cantidad {
+          font-size: 16px;
+        }
+      }
+      /***************************************************************************
+        Botón secundario con icono (paquetes)
+      ****************************************************************************/
+      &.icono {
+        height: 30px;
+
+        .icono-paquete {
+          width: 17px;
+          height: 13px;
+          margin-left: 5.78px;
+        }
+      }
+    }
+
+    &.terciario {
+      height: 48px;
+      font-size: 14px;
+      border: 2px solid $color-primario-6;
+
+      &.d3 {
+        height: 24px;
+      }
+
+      &:disabled {
+        border: 2px solid $color-visualizacion-dato-4;
+      }
+    }
+  }
+
+  /***************************************************************************
+    Botón deslizable sin icono
+  ****************************************************************************/
+  .boton-deslizable {
+    .etiqueta {
+      font-size: 12px;
+      margin-left: -15px;
+    }
+
+    .barra {
+      height: 5px;
+      width: 50px;
+      margin-top: 5.5px;
+    }
+
+    .circulo {
+      right: 51px;
+      border: 2px solid $color-primario-2;
+      width: 20px;
+      height: 20px;
+      margin-top: -1.75px;
+    }
+
+    .control:checked + .etiqueta .circulo {
+      right: 19px;
+      border: 2px solid $color-primario-2;
+    }
+  }
+}

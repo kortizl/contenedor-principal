@@ -1,0 +1,158 @@
+@import '../variables.scss';
+@import '../../../node_modules/red-unica/src/scss/funciones.scss';
+
+/***************************************************************************
+  Icono con accion - Lista de ordenamiento
+****************************************************************************/
+div.icono-orden {
+  display:inline-block;
+  height: calcularTamanio(19);
+  width: calcularTamanio(14);
+  border: none;
+  background-image: url("../../imagenes/listaDesactivado.svg");
+  background-size: 100% 100%;
+  position: relative;
+
+  &:hover {
+    background-image: url("../../imagenes/lista.svg");
+
+    ul {
+      display: block;
+    }
+  }
+
+  ul {
+    width: calcularTamanio(215);
+    height: calcularTamanio(246);
+    top: calcularTamanio(19);
+    right: 0;
+    z-index: 1;
+    position: absolute;
+    background-color: $color-primario-4;
+    box-shadow: calcularTamanio(0) calcularTamanio(2) calcularTamanio(4) $color-primario-1;
+    display: none;
+
+    li {
+      height: calcularTamanio(49.2);
+      font-size: calcularTamanio(12);
+      padding-left: calcularTamanio(20);
+      padding-top: calcularTamanio(18);
+      font-family: $fuente-texto;
+      color: $color-primario-1;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $color-visualizacion-dato-2;
+        font-weight: bold;
+      }
+
+      div {
+        height: calcularTamanio(30.9);
+        width: calcularTamanio(175);
+        border-bottom: calcularTamanio(1) $color-visualizacion-dato-4 solid;
+      }
+    }
+  }
+}
+
+/***************************************************************************
+  Icono con accion - icono-filtro
+****************************************************************************/
+div.icono-filtro {
+  display: inline-block;
+  height: calcularTamanio(19);
+  width: calcularTamanio(15);
+  border: none;
+  background-image: url("../../imagenes/filtroDesactivado.svg");
+  background-size: 100% 100%;
+  position: relative;
+
+  &:hover {
+    background-image: url("../../imagenes/filtro.svg");
+
+    ul {
+      display: block;
+    }
+  }
+
+  ul {
+    width: calcularTamanio(215);
+    height: calcularTamanio(290);
+    z-index: 1;
+    position: absolute;
+    background-color: $color-primario-4;
+    box-shadow: calcularTamanio(0) calcularTamanio(2) calcularTamanio(4) $color-primario-1;
+    top: calcularTamanio(19);
+    right: 0;
+    display: none;
+
+    li {
+
+      div {
+        font-size: calcularTamanio(12);
+        font-family: $fuente-texto;
+        width: calcularTamanio(185);
+
+        &.seleccion-actual {
+          font-weight: bold;
+          margin-left: calcularTamanio(20);
+
+          .categoria-seleccionada {
+            padding-top: calcularTamanio(15);
+            padding-bottom: calcularTamanio(10);
+            color: $color-primario-1;
+          }
+
+          .filtro-seleccionado {
+            color: $color-primario-6;
+            padding-bottom: calcularTamanio(10);
+          }
+        }
+
+        &.categoria{
+          font-weight: bold;
+          padding-top: calcularTamanio(15);
+          padding-bottom: calcularTamanio(6);
+          margin-left: calcularTamanio(20);
+        }
+
+        &.seleccion-filtros {
+          border-top: calcularTamanio(1) solid $color-visualizacion-dato-4;
+          border-bottom: calcularTamanio(1) solid $color-visualizacion-dato-4;
+          padding-top: calcularTamanio(5);
+          padding-bottom: calcularTamanio(5);
+          margin-left: calcularTamanio(10);
+
+          .boton-radio {
+            margin-left: calcularTamanio(15);
+            padding-top: calcularTamanio(8);
+            padding-bottom: calcularTamanio(8);
+          }
+        }
+      }
+    }
+  }
+}
+
+/***************************************************************************
+  Icono - Aviso emergente
+****************************************************************************/
+.avisoEmergente{
+  width: calcularTamanio(211);
+  padding-top: calcularTamanio(8.5);
+  padding-left: calcularTamanio(13);
+  padding-right: calcularTamanio(8);
+  padding-bottom: calcularTamanio(6.5);
+  font-size: calcularTamanio(14);
+  border-style: solid;
+  border-color: $color-primario-1;
+  border-width: calcularTamanio(2);
+  color: $color-primario-1;
+  background-color: $color-primario-2;
+  line-height: calcularTamanio(20);
+  margin-left: calcularTamanio(16);
+}
+
+.imagenAvisoEmergente{
+  cursor:pointer;
+}

@@ -1,0 +1,23 @@
+@import '../variables.scss';
+
+/* Estilos para PC  */
+@media screen and (min-width: 1025px) and (hover:hover) {
+    button {
+      &.pestania {
+        font-size: 14px;
+        height: 24px;
+        border-radius: 4px 4px 0px 0px;
+      }
+    }
+
+    div {
+      &.separacion {
+        height: 19px;
+        margin-top: 5px;
+
+        &.activa {
+          border-right: 1px #D8D8D8 solid;
+        }
+      }
+    }
+}

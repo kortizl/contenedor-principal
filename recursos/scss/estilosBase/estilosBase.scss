@@ -1,0 +1,180 @@
+@import '../variables.scss';
+@import'../../../node_modules/red-unica/src/scss/funciones.scss';
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: $color-primario-3;
+}
+
+#contenedor-principal {
+    background-color: $color-primario-4;
+    margin: 0 auto;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+.ReactModal__Body--open {
+  overflow: hidden;
+}
+
+.flotar-elemento-derecha {
+    float: right;
+}
+
+.flotar-elemento-izquierda {
+    float: left;
+}
+
+.quitar-contorno {
+    outline: none;
+}
+
+.alinear-texto-derecha {
+    text-align: right;
+}
+
+.alinear-texto-izquierda {
+    text-align: left;
+}
+
+.alinear-texto-centro {
+    text-align: center;
+}
+
+.alinear-elementos-centro {
+    align-items: center;
+}
+
+.alinear-elementos-final {
+  align-items: flex-end;
+}
+
+.auto-alineado-centro {
+    align-self: center;
+}
+
+.alinear-contenido-laterales {
+    justify-content: space-between;
+}
+
+.alinear-contenido-igualmente {
+  justify-content: space-evenly;
+}
+
+.mostrar-elemento {
+    display: block;
+}
+
+.mostrar-elemento-en-linea-por-bloque {
+    display: inline-block;
+}
+
+.mostrar-elemento-en-linea {
+    display: inline;
+}
+
+.mostrar-elemento-en-tabla {
+    display: table;
+}
+
+.mostrar-elemento-en-celda {
+    display: table-cell;
+}
+
+.ocultar-elemento {
+    display: none;
+}
+
+.posicion-absoluta {
+    position: absolute;
+}
+
+.posicion-relativa {
+    position: relative;
+}
+
+.elemento-flexible {
+    display: flex;
+}
+
+.mostrar-elemento-en-linea-flexible {
+    display: inline-flex;
+}
+.mostrar-elemento-en-linea-tabla {
+    display: inline-table;
+}
+
+.texto-tachado {
+    text-decoration: line-through;
+}
+
+.texto-subrayado{
+    text-decoration: underline;
+}
+
+.alinear-vertical-centro {
+  vertical-align: middle;
+}
+
+.direccion-elemento-flexible-columna {
+  flex-direction: column;
+}
+
+.envolver-elemento-flexible-en-linea{
+    flex-wrap: wrap;
+}
+
+.alinear-contenido-centro {
+  justify-content: center;
+}
+
+.alinear-contenido-final {
+  justify-content: flex-end;
+}
+
+.cursor-puntero{
+  cursor: pointer;
+}
+
+.ajustar-objeto{
+  object-fit: contain;
+}
+
+.contenido-ajustable{
+    height: fit-content;
+}
+
+.posicion-pegada{
+  position: sticky;
+}
+
+.borde-solido{
+  border-style: solid !important;
+}
+
+.fondo-sin-repeticion{
+    background-repeat: no-repeat;
+}
+
+.hereda-altura{
+    height: inherit;
+}
+
+.hereda-ancho{
+    width: inherit;
+}
+
+.alinear-contenido-flexible-al-inicio{
+    justify-content: flex-start;
+}
+
+.visibilidad-oculto {
+    visibility: hidden;
+}

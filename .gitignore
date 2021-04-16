@@ -1,0 +1,46 @@
+# Ver http://help.github.com/ignore-files/ para más informació de los archivos a ignorar por git.
+
+# Archivos de compilación
+/build
+/tmp
+/out-tsc
+
+# Dependencias
+/node_modules
+package-lock.json
+
+# IDEs y editores de texto
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# Miscelaneos
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Archivos temporales de Stryker
+.stryker-tmp
+/reports
+/reporteDeMutacion

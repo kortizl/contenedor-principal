@@ -1,0 +1,23 @@
+@import '../variables.scss';
+@import '../../../node_modules/red-unica/src/scss/funciones.scss';
+
+.grafica-dona {
+  .highcharts-background {
+    fill: none;
+  }
+  
+  .highcharts-caption {
+    font-size: calcularTamanio(27);
+    letter-spacing: calcularTamanio(-2.14);
+  }
+
+  &.numerico {
+    .highcharts-caption {
+      font-size: calcularTamanio(22);
+    }
+  }
+  
+  .highcharts-credits {
+    display: none;
+  }
+} 

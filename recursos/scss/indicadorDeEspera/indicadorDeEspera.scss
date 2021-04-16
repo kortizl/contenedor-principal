@@ -1,0 +1,90 @@
+@import '../variables.scss';
+@import'../../../node_modules/red-unica/src/scss/funciones.scss';
+
+/***************************************************************************
+  Indicador de Espera
+****************************************************************************/
+div.contenedor-carga{
+    overflow: hidden;
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: transparentize($color: $color-primario-1, $amount: 0.8);
+
+    .cargando {
+        overflow: hidden;
+        display: block;
+        position: relative;
+        width: calcularTamanio(150);
+        height: calcularTamanio(150);
+        top: 0;
+        left: 0;
+        margin: calcularTamanio(300) auto;
+        border-radius: 50%;
+        border-width: calcularTamanio(2.5);
+        border-style: solid;
+        border-color: transparent;
+        border-top-color: $color-primario-5;
+    
+        -webkit-animation: spin 2s linear infinite;
+              animation: spin 2s linear infinite;
+    }
+    
+        .cargando:before {
+            content: "";
+            position: absolute;
+            top: calcularTamanio(5);
+            left: calcularTamanio(5);
+            right: calcularTamanio(5);
+            bottom: calcularTamanio(5);
+            border-radius: 50%;
+            border: calcularTamanio(2.5) solid transparent;
+            border-top-color: $color-primario-6;
+    
+            -webkit-animation: spin 3s linear infinite; 
+              animation: spin 3s linear infinite; 
+        }
+    
+        .cargando:after {
+            content: "";
+            position: absolute;
+            top: calcularTamanio(15);
+            left: calcularTamanio(15);
+            right: calcularTamanio(15);
+            bottom: calcularTamanio(15);
+            border-radius: 50%;
+            border: calcularTamanio(2.5) solid transparent;
+            border-top-color: $color-visualizacion-dato-3;
+    
+            -webkit-animation: spin 1.5s linear infinite; 
+              animation: spin 1.5s linear infinite; 
+        }
+    
+        @-webkit-keyframes spin {
+            0%   { 
+                -webkit-transform: rotate(0deg);  
+                -ms-transform: rotate(0deg);  
+                transform: rotate(0deg);  
+            }
+            100% {
+                -webkit-transform: rotate(360deg);  
+                -ms-transform: rotate(360deg);  
+                transform: rotate(360deg);  
+            }
+        }
+        @keyframes spin {
+            0%   { 
+                -webkit-transform: rotate(0deg); 
+                -ms-transform: rotate(0deg); 
+                transform: rotate(0deg);  
+            }
+            100% {
+                -webkit-transform: rotate(360deg);  
+                -ms-transform: rotate(360deg);  
+                transform: rotate(360deg);  
+            }
+        }
+}

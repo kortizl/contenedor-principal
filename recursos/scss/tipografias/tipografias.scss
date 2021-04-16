@@ -1,0 +1,112 @@
+@import '../variables.scss';
+@import'../../../node_modules/red-unica/src/scss/funciones.scss';
+
+body {
+  font-family: $fuente-texto;
+  color: $color-primario-1;
+}
+
+h1 {
+  font-size: calcularTamanio(48);
+  letter-spacing: calcularTamanio(-0.92);
+}
+
+h2 {
+  font-size: calcularTamanio(36);
+  letter-spacing: calcularTamanio(-0.84);
+}
+
+h3 {
+  font-size: calcularTamanio(32);
+  letter-spacing: calcularTamanio(-0.75);
+}
+
+h4 {
+  font-size: calcularTamanio(22);
+  letter-spacing: calcularTamanio(-0.46);
+}
+
+h5 {
+  font-size: calcularTamanio(24);
+  letter-spacing: calcularTamanio(-0.5);
+}
+
+.cuerpo-1 {
+  font-size: calcularTamanio(18);
+}
+
+.cuerpo-2 {
+  font-size: calcularTamanio(16);
+}
+
+.cuerpo-3 {
+  font-size: calcularTamanio(14);
+}
+
+.etiqueta-1 {
+  font-size: calcularTamanio(12);
+}
+
+.etiqueta-2 {
+  font-size: calcularTamanio(10);
+}
+
+h1.numerico {
+  font-size: calcularTamanio(58);
+  letter-spacing: calcularTamanio(-3.17);
+}
+
+h2.numerico {
+  font-size: calcularTamanio(36);
+  letter-spacing: calcularTamanio(-2.33);
+}
+
+h2.numerico-a {
+  font-size: calcularTamanio(32);
+  letter-spacing: calcularTamanio(-2.07);
+}
+
+h3.numerico {
+  font-size: calcularTamanio(24);
+  letter-spacing: calcularTamanio(-2.33);
+}
+
+h4.numerico {
+  font-size: calcularTamanio(22);
+  letter-spacing: calcularTamanio(-2.14);
+}
+
+h4.numerico-a {
+  font-size: calcularTamanio(18);
+  letter-spacing: calcularTamanio(-1.56);
+}
+
+h4.numerico-b {
+  font-size: calcularTamanio(16);
+  letter-spacing: calcularTamanio(-1.56);
+}
+
+h5.numerico {
+  font-size: calcularTamanio(14);
+  letter-spacing: calcularTamanio(-1.05);
+}
+
+h6.numerico {
+  font-size: calcularTamanio(12);
+  letter-spacing: calcularTamanio(-0.9);
+}
+
+.h7.numerico {
+  font-size: calcularTamanio(10);
+  letter-spacing: calcularTamanio(-0.75);
+}
+
+.negritas {
+  font-weight: bold;
+}
+
+.numerico,
+.numerico-a,
+.numerico-b {
+  font-family: $fuente-numerica;
+}

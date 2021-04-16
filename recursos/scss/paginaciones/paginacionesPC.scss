@@ -1,0 +1,50 @@
+@import '../variables.scss';
+@import'../../../node_modules/red-unica/src/scss/funciones.scss';
+
+/* Estilos para PC  */
+@media screen and (min-width: 1025px) and (hover: hover) {
+  /***************************************************************************
+    Controles de paginación
+  ****************************************************************************/
+  .paginacion {
+    height: 20px;
+    width: 57px;
+
+    div {
+      background-size: 10px 20px;
+      height: 20px;
+      width: 57px;
+
+      &.atras {
+        width: 10px;
+        margin-right: 37px;
+      }
+
+      &.adelante {
+        width: 10px;
+      }
+    }
+  }
+  /***************************************************************************
+    Paginador con texto
+  ****************************************************************************/
+  .paginador {
+    height: 40px;
+    width: 156.02px;
+
+    div {
+      background-position-y: 17px;
+
+      &.texto {
+        font-size: 16px;
+
+        div {
+          
+          &.totalPaginas {
+            margin-top: 3px;
+          }
+        }
+      }
+    }
+  }
+}

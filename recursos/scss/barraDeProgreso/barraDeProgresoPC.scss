@@ -1,0 +1,18 @@
+@media only screen and (min-width: 1025px)  {
+    .contenedor-progreso{
+        --anchoPaso : 112.3px;
+    }
+    .circulo-progreso > img{
+        height:12px;
+    }
+    
+    .icono-progreso > img {
+        height:12px;
+    }
+}
+
+@media only screen and (min-height: 769px)  {
+    .contenedor-progreso{
+        --altoPaso : 100px;  
+    }
+}

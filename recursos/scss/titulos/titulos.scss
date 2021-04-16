@@ -1,0 +1,21 @@
+@import '../variables.scss';
+@import'../../../node_modules/red-unica/src/scss/funciones.scss';
+
+.titulo-seccion {
+  display: flex;
+  width: 100%;
+
+  .linea {
+    flex: 1 1 auto;
+    background-color: $color-primario-1;
+    width: max-content;
+    position: relative;
+    margin-left: calcularTamanio(12);
+    height: calcularTamanio(4);
+    top: calcularTamanio(23);
+  
+    &.modal {
+    top: calcularTamanio(16);
+    }
+  }
+}

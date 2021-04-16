@@ -1,0 +1,119 @@
+@import '../variables.scss';
+@import'../../../node_modules/red-unica/src/scss/funciones.scss';
+
+/***************************************************************************
+  Controles de paginación
+****************************************************************************/
+.paginacion {
+  height: calcularTamanio(20);
+  width: calcularTamanio(57);
+  
+  div {
+    background-size: calcularTamanio(10) calcularTamanio(20);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    float: left;
+    height: calcularTamanio(20);
+    width: calcularTamanio(57);
+
+    &.atras {
+      width: calcularTamanio(10);
+      margin-right:calcularTamanio(37);
+      background-image: url("../../imagenes/paginacionAtrasDesactivado.svg");
+
+      &.activo {
+        background-image: url("../../imagenes/paginacionAtras.svg");
+        cursor: pointer;
+      }
+    }
+
+    &.adelante {
+      width: calcularTamanio(10);
+      background-image: url("../../imagenes/paginacionAdelanteDesactivado.svg");
+
+      &.activo {
+        background-image: url("../../imagenes/paginacionAdelante.svg");
+        cursor: pointer;
+      }
+    }
+  }
+}
+/***************************************************************************
+  Paginador con texto
+****************************************************************************/
+.paginador {
+  height: calcularTamanio(40);
+  width: calcularTamanio(156.02);
+  margin: auto;
+
+  div {
+    float: left;
+    background-position-y: calcularTamanio(17);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100%;
+
+    &.atras {
+      width: 6.5%;
+      margin-left: 6.5%;
+      border: none;
+      background-image: url("../../imagenes/paginacionAtrasDesactivado.svg");
+
+      &.activado {
+        background-image: url("../../imagenes/paginacionAtras.svg");
+        cursor: pointer;
+      }
+    }
+
+    &.adelante {
+      width: 6.5%;
+      margin-right: 6.5%;
+      border: none;
+      background-image: url("../../imagenes/paginacionAdelanteDesactivado.svg");
+
+      &.activado {
+        background-image: url("../../imagenes/paginacionAdelante.svg");
+        cursor: pointer;
+      }
+    }
+
+    &.principio {
+      width: 10%;
+      border: none;
+      background-image: url("../../imagenes/paginacionPrincipioDesactivado.svg");
+
+      &.activado {
+        background-image: url("../../imagenes/paginacionPrincipio.svg");
+        cursor: pointer;
+      }
+    }
+
+    &.final {
+      width: 10%;
+      border: none;
+      background-image: url("../../imagenes/paginacionFinalDesactivado.svg");
+
+      &.activado {
+        background-image: url("../../imagenes/paginacionFinal.svg");
+        cursor: pointer;
+      }
+    }
+
+    &.texto {
+      width: 54%;
+      text-align: center;
+      height: auto;
+      font-family: $fuente-texto;
+      font-size: calcularTamanio(16);
+
+      div {
+        cursor: default;
+        float: none;
+        
+        &.totalPaginas{
+          margin-top: calcularTamanio(3);
+        }
+      }
+    }
+  }
+}

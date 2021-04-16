@@ -1,0 +1,10 @@
+window._env_ = {
+  REACT_APP_JUEZ_FRASE_SECRETA: "Fr4zeR3dUn1c4C3kr3t4",
+  REACT_APP_CONSUMER_KEY_EXT: "8QrMLliA1SSZV8Gtu91bxDK7roceAZsEt3GswumrWsWUyr2NwucZ3d7vjwnXW4NX",
+  REACT_APP_CONSUMER_SECRET_EXT: "IzlmFuqO39p0JeuV8F2E6TsFJeJMyPQZBmmzt6teS8Q=",
+  REACT_APP_CONSUMER_KEY_INT: "8QrMLliA1SSZV8Gtu91bxDK7roceAZsEt3GswumrWsWUyr2NwucZ3d7vjwnXW4NX",
+  REACT_APP_CONSUMER_SECRET_INT: "IzlmFuqO39p0JeuV8F2E6TsFJeJMyPQZBmmzt6teS8Q=",
+  REACT_APP_BASE_URL_INT: "https://dev-api.bancoazteca.com.mx:8080",
+  REACT_APP_BASE_URL_EXT: "https://dev-api.bancoazteca.com.mx:8080",
+  REACT_APP_URL_TOKEN: "/oauth2/v1/token",
+}
